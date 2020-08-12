@@ -1,7 +1,10 @@
 $(document).ready(function() {
-  $("form#name").submit(function(event) {
+  $("form#nameForm").submit(function(event) {
     event.preventDefault();
-    const name = $("#name").val();
-    $("#output1").text(name);
+    const result = $("#name").val();
+    const beverage = $("#beverage").val();
+    $("#output1").text("hello " + result + " " + beverage);
+
+    
   });
 });
